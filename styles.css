@@ -1,0 +1,761 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --purple:rgba(108, 93, 211, 1);
+
+  --black:rgba(0,0,0,1);
+  --white:rgba(255, 255, 255, 1);
+  --light-white:rgba(255, 255, 255, 0.3);
+  --dark-gray-shade:rgba(94, 98, 114, 1);
+
+  --teal:
+  rgba(37, 192, 190, 1);
+  --pink:rgba(255, 162, 192, 1);
+  --red:rgba(231, 10, 10, 1);
+  --black-with-Grayish-Shade:
+  rgba(40, 42, 55, 1);
+  
+  
+  --blue-Color-For-Gradiant:rgba(43, 89, 255, 1);
+  --light-Purple-Color-For-Gradiant:
+rgba(187, 43, 255, 1);
+
+
+
+  
+  
+  --f-size: 16px;
+  
+}
+html,
+body {
+  font-family: 'Inter', sans-serif;
+}
+body{
+  background-color:#12151B;
+}
+
+
+
+/* ====================Utilities============= */
+.primary-Button{
+  color: var(--white);
+  font-size: var(--f-size);
+  font-weight: 600;
+
+}
+.primaryHeading{
+  font-weight: 800;
+  font-size: 2rem;
+  color: var(--white);
+}
+.primary-paragraph{
+  font-size: var(--f-size);
+  color:var(--white);
+  opacity: 70%;
+}
+.notStartedYetSpan{
+  color:rgba(94, 98, 114, 1);
+  font-size: var(--f-size);
+  font-weight: 600;
+
+}
+.secondary-Heading{
+  color: var(--white);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.HideProgressBar{
+  display:none;
+}
+.unHideProgressBar{
+  display:block;
+}
+.hideStatusSpan{
+  display:none;
+}
+.unHideStartedSpans{
+  display:block;
+
+
+}
+.hideStartedSpans{
+  display: none;
+}
+
+
+
+/* ====================== Main CSS=========== */
+
+.headerContainer{
+  display: flex;
+  flex-direction: column;
+}
+#heroHeading{
+  width: 35rem;
+  margin-block: 1rem;
+}
+.navBarContainer{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.6rem;
+  position: relative;
+  
+}
+.centerAnchorTagsContainer{
+  display:flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.centerAnchorTagsContainer li{
+  list-style-type: none;
+}
+.centerAnchorTagsContainer li a{
+  text-decoration: none;
+  color:var(--white);
+  font-size: var(--f-size);
+  font-weight: 600;
+}
+.centerAnchorTagsContainer li a:hover{
+  color:var(--purple);
+}
+.rightNavdivision{
+  display: flex;
+  flex-direction: row;
+  gap:1rem;
+}
+#siginButton{
+  background: transparent;
+  border-radius: 5px;
+  border: 1px solid var(--light-white);
+  padding: 0.7rem 1.2rem;
+  font-weight: 500;
+}
+.mainBodyContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;  
+}
+
+.mainHeroSection{
+  background-image: url("./images/main-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+.HeroImageContentContainer{
+  text-align: center;
+}
+.HeroImageContentContainer img{
+  height: 300px;
+  width: 500px;
+}
+
+/* .gradiantBox{
+  background-image: url("./images/MainHeroBackgroundGraient.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height:300px;
+  width:350px;
+  /* border-radius: 20px; */
+  /* opacity: 70%;
+} */ 
+/* .gradiantBoxLeft{
+  position: absolute;
+  top:-1%;
+  right:2%;
+}
+.gradiantBoxRight{
+  position: absolute;
+  bottom:-1%;
+  left:0;
+} */
+#customizeButton{
+  border-radius: 5px;
+  padding: 16px 20px;
+  outline: none;
+  border: none;
+  background-color:var(--purple);
+
+}
+.divider{
+  margin-top: 1rem;
+  height:1px;
+  border: 1px solid rgba(37, 40, 53, 1)
+}
+.userChallengesSection{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+
+}
+.cardsChallengesContainer{
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(4,1fr);
+  width: 68rem;
+  max-width: 100%;
+  padding: 1rem;
+  gap:1rem;
+
+}
+.challengeCard{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  /* border:1px solid red; */
+  height: 150px;
+  width:250px;
+  background-color: var(--black-with-Grayish-Shade);
+  border-radius: 10px;
+
+
+}
+.challengeCard img{
+  height: 80px;
+  width: 80px;
+}
+.statusSpans{
+  color: var(--dark-gray-shade);
+  font-weight: 600;
+  font-size: 16px;
+
+}
+.ProgressBar{
+  width:200px;
+  max-width: 100%;
+  height:4px;
+  background-color: var(--dark-gray-shade);
+  border-radius: 12px;
+  box-shadow: 4px 10px 20px 0px rgba(0, 0, 0, 0.06);
+
+}
+.Progress{
+  width: 75%;
+  height: 100%;
+  border-radius: 12px;
+}
+.statusSpan{
+  position: absolute;
+  right:3%;
+  top:5%;
+  color:var(--white);
+  border-radius: 15px;
+  padding: 0.3rem;
+}
+#excerciseStatusSpan,#excerciseProgressBar,#cyclingProgressBar,#cyclingStatusSpan{
+  background-color: var(--red);
+}
+#writedairyProgressBar,#writedairyStatusSpan,#writeDairyProgressBar,#writeDairyStatusSpan{
+  background-color: var(--teal);
+}
+
+#studyProgressBar,#studyStatusSpan,#dailyGameProgressBar,#dailyGameStatusSpan{
+  background-color: var(--blue-Color-For-Gradiant);
+}
+#happinessProgressBar,#happinessStatusSpan,#readingBookProgressBar,#readingBookStatusSpan{
+  background-color: var(--pink);
+}
+#seeAllMoreAnchorTag{
+  color: var(--white);
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: underline;
+}
+.levelupSection,.mobilePairSection{
+  display: grid;
+  place-items: center;
+
+}
+.imageContentContainer,.imageContentContainerMobilePair{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  width: 55rem;
+  max-width: 100%;
+  /* border:1px solid red; */
+
+}
+.imageContainer{
+  background-image: url("images/levelUpSectionBackground.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+  /* border:1px solid yellow; */
+
+}
+
+.imageContainer img{
+  width: 450px;
+  height: 420px;
+}
+.imageContainerMobilePairSection{
+  background-image: url("images/MobilePairBackground.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0.2rem;
+}
+.imageContainerMobilePairSection img{
+  width: 460px;
+  height: 390px;
+}
+
+.contentContainer,.mobilePairContentContainer{
+  padding: 1rem 0.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+.userContentDivision,.calendarContentDivision{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.calendarContentDivision img,.userContentDivision img{
+  width: 1.7rem;
+  padding-bottom: 2rem;
+}
+
+#userColouredSpan,#calendarColouredSpan{
+  color: var(--purple);
+  font-weight: 600;
+  font-size: 18px;
+}
+#freeTrialButton{
+  background-color:rgba(82, 71, 158, 1);
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  padding: 0.8rem 1.2rem;
+  margin-top: 1rem;
+
+}
+.imageIconsContainer{
+  margin-block: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.2rem;
+}
+.pacakgesSection{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+#mainHeading{
+  width: 28rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 2.3rem;
+}
+.packageCardsContainer{
+  width:55rem;
+  padding: 0.5rem;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
+
+}
+
+.pacakgeCard{
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  border-radius: 10px;
+  background-color: var(--black-with-Grayish-Shade);
+  padding: 1rem;
+  height: 470px;
+  width: 275px; 
+}
+
+
+.cardTitle,.pacakageDescription,.packageDuration{
+  font-size: var(--f-size);
+  font-weight: 400;
+  color:var(--white);
+  opacity: 70%;
+}
+.packagePrice{
+  color: var(--white);
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+#starterPlanButton{
+  background: transparent;
+  outline: none;
+  border-radius: 5px;
+  padding: 16px;
+  border: 1px solid rgba(18, 20, 29, 1);
+  margin-top: 4.5rem;
+}
+#premiumPlanButton,#basicPlanButton{
+  background: transparent;
+  outline: none;
+  border-radius: 5px;
+  padding: 16px;
+  border: 1px solid rgba(18, 20, 29, 1);
+  margin-top: 0.5rem;
+
+}
+
+
+.pacakageDescription{
+  margin-top: -1rem;
+  padding-bottom: 0.8rem;
+}
+.pacakageIncludedDescription{
+  line-height: 2rem;
+  font-size: var(--f-size);
+  font-weight: 500;
+  color:var(--white);
+  opacity: 70%;
+}
+.cardsButton:hover{
+  cursor: pointer;
+  background-color:rgba(108, 93, 211, 1) !important;
+  color: var(--white);
+  
+}
+#cardHeading{
+  font-size: 1rem;
+}
+.footerContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0.5rem;
+  align-items: center;
+}
+
+.trialGradiantBox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 62rem;
+  max-width: 100%;
+  background: linear-gradient(94.25deg, #2B59FF 0%, #BB2BFF 100%);
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+.trialGradiantBox span{
+  align-self: flex-start;
+  width: 32rem;
+}
+
+.gradiantBoxSpan{
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600px;
+  font-size: 2rem;
+  color:var(--white);
+}
+#freeTrialButtonWhite{
+  background-color: var(--white);
+  color: var(--black);
+  font-weight: 600 !important;
+  font-size: 1rem;
+  padding: 1rem 1.2rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+.footerTagsMainContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 62rem;
+  max-width: 100%;
+  margin-block: 1.5rem;
+  padding: 0.5rem;
+  gap:1.5rem;
+  
+}
+.tagsDivision{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.footer-Headings{
+  font-weight: 600;
+  font-size: var(--f-size);
+  color: var(--white);
+  margin-bottom: 1.3rem;
+}
+.tagsDivision a{
+  color: var(--white);
+  text-decoration: none;
+  font-size:14px;
+  font-weight: 400;
+  opacity: 80%;
+}
+.tagsDivision a:hover{
+  color: var(--purple);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.Menu{
+  width: 2rem;
+  height: 1.5rem;
+  display: none;
+}
+
+.Menu:hover{
+  cursor: pointer;
+}
+.drowerMobile{
+  top: 4%;
+  position: absolute;
+  right: 2%;
+  z-index: 2;
+  height: 27rem;
+  width: 100%;
+  background-color: var(--black-with-Grayish-Shade);
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  display: none;
+  transform: translateX(100%); /* Initially translate out of view */
+  transition: all 0.3s ease-in-out; /* Transition for smooth slide */
+
+}
+.showDrowerMoile{
+  display: block;
+  transform: translateX(0);
+}
+.drowerAnchorTagsContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: center;
+}
+.drowerAnchorTagsContainer li{
+  list-style-type: none;
+}
+.drowerAnchorTagsContainer li a{
+  text-decoration: none;
+  color:var(--white);
+  font-size: var(--f-size);
+  font-weight: 600;
+}
+
+.drowerAnchorTagsContainer li a:hover{
+  color:var(--purple);
+  text-decoration: underline;
+}
+#closeIcon{
+  position: absolute;
+  right: 2%;
+  top:4%;
+  transition: all 0.3s ease-in;
+}
+#closeIcon:hover path {
+  cursor: pointer;
+  fill: var(--purple);
+  transition: all 0.3s ease-out;
+}
+
+.buttonContainer{
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap:0.5rem; 
+}
+
+.SiginButtonDrower,.SignUpButtonDrower{
+  background: transparent;
+  border-radius: 5px;
+  border: 1px solid var(--light-white);
+  padding: 0.7rem 1.2rem;
+  font-weight: 500;
+}
+.SiginButtonDrower:hover,.SignUpButtonDrower:hover{
+  background-color: var(--purple) !important;
+  color: var(--white) !important;
+  cursor: pointer;
+}
+
+@media screen and (max-width:1070px) {
+  .cardsChallengesContainer{
+    
+    grid-template-columns: repeat(3,1fr);
+    
+    
+  }
+
+  
+}
+@media screen and (max-width:900px) {
+  .imageContentContainer{
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .contentContainer{
+    align-items: flex-start;
+    text-align: center;
+    padding: 0.4rem;
+    width: 100%;
+  }
+  .userChallengesSection{
+    text-align: center;
+  }
+  #freeTrialButton{
+    align-self: center;
+  }
+  .imageContentContainerMobilePair{
+    flex-direction: column-reverse;
+    width: 100%;
+
+  }
+  .mobilePairContentContainer{
+    align-items: center;
+    text-align: center;
+  }
+  .packageCardsContainer{
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .imageContainer img{
+    width:380px;
+  }
+  .primaryHeading{
+    width: 90%;
+  }
+}
+@media screen and (max-width:870px) {
+  .centerAnchorTagsContainer{
+    display: none;
+  }
+  .rightNavdivision{
+    display: none;
+  }
+  .navBarContainer{
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .Menu{
+    display: block;
+  }
+  
+
+}
+@media screen and (max-width:850px) {
+  .cardsChallengesContainer{  
+    grid-template-columns: repeat(2,1fr);
+  }  
+  
+  .trialGradiantBox{
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  .HeroImageContentContainer img{
+    height:300px;
+    width: 425px;
+  }
+  
+  
+
+
+}
+@media screen and (max-width:700px) {
+  .footerTagsMainContainer{
+    flex-wrap: wrap;
+
+  }
+  
+}
+@media screen and (max-width:600px) {
+  .cardsChallengesContainer{
+      
+      grid-template-columns: repeat(1,1fr);
+  }  
+  .imageContainer img{
+    width: 100%;
+    height: 270px;
+  }
+  .imageContainerMobilePairSection img{
+    width: 300px;
+    height:270px;
+  }
+  .packageCardsContainer{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .HeroImageContentContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  #heroHeading{
+    font-size: 1.5rem; 
+    padding: 1rem;
+    max-width: 80%;
+   }
+   #mainHeading {
+    font-size: 1.7rem;
+    width: 90%;
+   }
+   
+   .HeroImageContentContainer img{
+    width: 390px;
+  }
+
+}
+@media screen and (max-width:465px) {
+  .HeroImageContentContainer img{
+    width: 380px;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

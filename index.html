@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Habbit Challenges|App</title>
+    <link rel="icon" href="images/Frame.png" type=".png">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    
+    <header class="headerContainer">
+
+      <nav class="navBarContainer">
+        
+        <div class="logoLeftContainer">
+          <img src="images/Frame.png" alt="Logo">
+        </div>
+        
+        <ul class="centerAnchorTagsContainer">
+          <li><a href="###">Home</a></li>
+          <li><a href="###">Challenge</a></li>
+          <li><a href="###">Notification</a></li>
+          <li><a href="###">Hide Challenges</a></li>
+          <li><a href="###">Customize</a></li>
+        </ul>
+        
+        <div class="rightNavdivision">
+          <button class="primary-Button" id="siginButton">Sign in</button>
+          <img src="images/user-circle.svg" alt="User Icon">
+          <img src="images/globe.svg" alt="Globe Icon">
+          
+        </div>
+
+        <img class="Menu" id="menuIcon" src="images/icon-menu.svg" alt="icon-menu">
+
+      </nav>
+      <div class="drowerMobile">
+        <svg  id="closeIcon" width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#ffffff" fill-rule="evenodd"/></svg>
+        
+        <ul class="drowerAnchorTagsContainer">
+          <li><a href="###">Home</a></li>
+          <li><a href="###">Challenge</a></li>
+          <li><a href="###">Notification</a></li>
+          <li><a href="###">Hide Challenges</a></li>
+          <li><a href="###">Customize</a></li>
+        </ul>
+        
+          <!-- <img src="images/user-circle.svg" alt="User Icon">
+          <img src="images/globe.svg" alt="Globe Icon"> -->
+          <div class="buttonContainer">
+            <button class="primary-Button SiginButtonDrower" id="sigInButton">Sign in</button>
+            <button class="primary-Button SignUpButtonDrower" id="signUpButton">Sign up</button>
+
+          </div>
+      </div>
+      <section class="mainHeroSection">
+        
+          
+        
+        <div class="HeroImageContentContainer">
+          <img src="images/HeroImage.png" alt="Hero Image">
+          <h1 class="primaryHeading" id="heroHeading">The 18-Day Racial Equity Habit Building Challenges
+          </h1>
+
+          <button class="primary-Button" id="customizeButton">Customize Challenge</button>
+
+        </div>
+        
+
+
+        
+      </section>
+
+    </header>
+    <div class="divider"></div>
+    <main class="mainBodyContainer">
+      <section class="userChallengesSection">
+        <h1 class="primaryHeading" id="topMostUserHeading">Top Most user Challenges
+        </h1>
+        <p class="primary-paragraph" id="userChallengesPara">AI engines take information from various sources and read them like a human would do.</p>
+
+        <div class="cardsChallengesContainer">
+          <div class="challengeCard" id="excerciseCard">
+            <span class="statusSpan hideStatusSpan" id="excerciseStatusSpan">15/20</span>
+            <img src="images/cycleImage.png" alt="excerciseImage">
+            <h4 class="secondary-Heading" id="excerciseHeadng">Excercise</h4>
+            <div class="ProgressBar HideProgressBar">
+              <div class="Progress" id="excerciseProgressBar"></div>
+            </div>
+            <span class="notStartedYetSpan unHideStartedSpans" >Not Started Yet</span>
+
+
+          </div>
+          <div class="challengeCard" id="ReadingBookCard">
+            <span class="statusSpan" id="readingBookStatusSpan">15/20</span>
+            <img src="images/readingBook.png" alt="readingBookImage">
+            <h4 class="secondary-Heading" id="readingbookHeadng">Reading book</h4>
+            <div class="ProgressBar unHideProgressBar" ">
+              <div class="Progress" 
+              id="readingBookProgressBar" ></div>
+            </div>
+            <span class="notStartedYetSpan hideStartedSpans" >Not Started Yet</span>
+
+
+          </div>
+          <div class="challengeCard" id="WriteDairyCard">
+            <span class="statusSpan" id="writeDairyStatusSpan">15/20</span>
+            <img src="images/writedairy.png" alt="writeDairyImage">
+            <h4 class="secondary-Heading" id="excerciseHeadng">Write Dairy</h4>
+            <div class="ProgressBar unHideProgressBar" >
+              <div class="Progress" id="writeDairyProgressBar"></div>
+            </div>
+            <span class="notStartedYetSpan hideStartedSpans" >Not Started Yet</span>
+
+
+          </div>
+          <div class="challengeCard" id="dailyGameCard">
+            <span class="statusSpan hideStatusSpan" id="dailyGameStatusSpan">15/20</span>
+            <img src="images/dailyGame.png" alt="dailyGameImage">
+            <h4 class="secondary-Heading" id="dailyGameHeadng">Daily Game</h4>
+            <div class="ProgressBar HideProgressBar" >
+              <div class="Progress" id="dailyGameProgressBar"></div>
+            </div>
+            <span class="notStartedYetSpan unHideStartedSpans" >Not Started Yet</span>
+
+
+          </div>
+          <div class="challengeCard" id="happinessCard">
+            <span class="statusSpan" id="happinessStatusSpan">15/20</span>
+            <img src="images/happiness.png" alt="happinessImage">
+            <h4 class="secondary-Heading" id="happinessHeadng">Happiness</h4>
+            <div class="ProgressBar unHideProgressBar" >
+              <div class="Progress" id="happinessProgressBar"></div>
+            </div>
+            <span class="notStartedYetSpan hideStartedSpans" >Not Started Yet</span>
+
+
+          </div>
+          <div class="challengeCard" id="studyCard">
+            <span class="statusSpan hideStatusSpan" id="studyStatusSpan">15/20</span>
+            <img src="images/study.png" alt="studyImage">
+            <h4 class="secondary-Heading" id="studyHeadng">Study</h4>
+            <div class="ProgressBar HideProgressBar" >
+              <div class="Progress"
+              id="studyProgressBar"></div>
+            </div>
+            <span class="notStartedYetSpan unHideStartedSpans" >Not Started Yet</span>
+
+
+          </div>
+          <div class="challengeCard" id="cyclingCard">
+            <span class="statusSpan" id="cyclingStatusSpan">15/20</span>
+            <img src="images/cycleImage.png" alt="cyclingImage">
+            <h4 class="secondary-Heading" id="cyclingHeadng">Cycling</h4>
+            <div class="ProgressBar unHideProgressBar" >
+              <div class="Progress" id="cyclingProgressBar"></div>
+            </div>
+            <span class="notStartedYetSpan hideStartedSpans" >Not Started Yet</span>
+
+
+          </div>
+          <div class="challengeCard" id="writedairy">
+            <span class="statusSpan hideStatusSpan" id="writedairyStatusSpan">15/20</span>
+            <img src="images/dairy.png" alt="writeDiaryImage">
+            <h4 class="secondary-Heading" id="writedairyHeadng">Write Diary</h4>
+            <div class="ProgressBar HideProgressBar" >
+              <div class="Progress" id="writedairyProgressBar"></div>
+            </div>
+            <span class="notStartedYetSpan unHideStartedSpans" >Not Started Yet</span>
+
+
+          </div>
+
+
+
+
+
+        </div>
+
+        <a href="###" id="seeAllMoreAnchorTag">See all more Challenges</a>
+
+      </section>
+
+      <section class="levelupSection">
+        <div class="imageContentContainer">
+          <div class="imageContainer">
+            <img src="images/levelupSection.png" alt="Level up Section Image">
+          </div>
+          <div class="contentContainer">
+            <h1 class="primaryHeading" id="levelUpSecHeading">Level Up the Fun with
+              Challenges.</h1>
+            
+            <div class="userContentDivision">
+              <img src="images/users 01.svg" alt="user Icon">
+
+              <p class="primary-paragraph UserParagraph"><span id="userColouredSpan">Challenge your Friends.</span>Boost your habit-forming journey with a bit of friendly rivalry</p>
+
+            </div>
+            <div class="calendarContentDivision">
+              <img src="images/Calendar.svg" alt="calendar Icon">
+
+              <p class="primary-paragraph calendarParagraph"><span id="calendarColouredSpan">Join Monthly Challenge.</span>Climb the leaderboards, make habit formation fun and rewarding.</p>
+              
+            </div>
+            <button class="primary-Button" id="freeTrialButton">Start 14 Days Free Trial</button>
+
+          </div>
+        </div>
+
+
+
+      </section>
+      <section class="mobilePairSection">
+        <div class="imageContentContainerMobilePair">
+          <div class="mobilePairContentContainer">
+            <h1 class="primaryHeading" id="mobilePairSectionHeading">Why Wait to Transform Your Life?</h1>
+            <p class="primary-paragraph" id="mobilePairSectionPara">Join over 2 million people who are taking control of their habits and building a better life with Habitify. Whether your aim is to enhance productivity, improve fitness, or simply form healthier daily habits, Habitify has everything you need to make it happen</p>
+            <div class="imageIconsContainer">
+              <img src="images/google-play.svg" alt="GooglePlay">
+              <img src="images/app-store.svg" alt="App store">
+
+            </div>
+            
+          </div>
+          <div class="imageContainerMobilePairSection">
+            <img src="images/mobilePair.png" alt="Mobile Pair Image">
+          </div>
+        </div>
+
+      </section>
+
+      <section class="pacakgesSection">
+        <h1 class="primaryHeading" id="mainHeading">Make the wise decision for your business
+        </h1>
+
+        <p class="primary-paragraph" id="pacakgesSectionPara">Choose from our affordable 3 packages</p>
+
+
+
+        <div class="packageCardsContainer">
+
+          <div class="pacakgeCard" id="starterPlanCard">
+            <span class="cardTitle">
+              Starter Plan
+            </span>
+
+            <span class="packagePrice">$29<span class="packageDuration">/month</span>
+
+            </span>
+
+            <p class="pacakageDescription">
+              This package is suitable for teams 1-15 people.
+            </p>
+
+            <h4 class="secondary-Heading" id="cardHeading">What’s included:</h4>
+              
+            <p class="pacakageIncludedDescription">
+              10 GB Dedicated Hosting Free
+              Best for Developers, Freelancers
+              1 Year Support  
+            </p>
+
+            <button class="primary-Button cardsButton" id="starterPlanButton">Get Started</button>
+
+
+          </div>
+          
+          <div class="pacakgeCard" id="starterPlanCard">
+            <span class="cardTitle">
+              Basic Plan
+            </span>
+
+            <span class="packagePrice">$79<span class="packageDuration">/month</span>
+
+            </span>
+
+            <p class="pacakageDescription">
+              This package is suitable for teams 1-50 people.
+            </p>
+
+            <h4 class="secondary-Heading" id="cardHeading">What’s included:</h4>
+              
+            <p class="pacakageIncludedDescription">
+              15 GB Dedicated Hosting Free
+              Best for Developers, Freelancers
+              5 Year Support 
+              Free Custom Domain
+              Basic Statistics 
+            </p>
+
+            <button class="primary-Button cardsButton" id="basicPlanButton">Get Started</button>
+
+
+          </div>
+
+          <div class="pacakgeCard" id="starterPlanCard">
+            <span class="cardTitle">
+              Premium Plan
+            </span>
+
+            <span class="packagePrice">$129<span class="packageDuration">/month</span>
+
+            </span>
+
+            <p class="pacakageDescription">
+              This package is suitable for teams 1-100 people.
+            </p>
+
+            <h4 class="secondary-Heading" id="cardHeading">What’s included:</h4>
+              
+            <p class="pacakageIncludedDescription">
+              20 GB Dedicated Hosting Free
+              Best for Developers, Freelancers
+              Unlimited Support
+              Free Custom Domain
+              Full Statistics  
+            </p>
+
+            <button class="primary-Button cardsButton" id="premiumPlanButton">Get Started</button>
+
+
+          </div>
+
+
+
+
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer class="footerContainer">
+
+      <div class="trialGradiantBox">
+        <span class="gradiantBoxSpan">
+          It will help you improve your writing & bring ideas more c learly.
+        </span>
+
+        <button class="primary-Button" id="freeTrialButtonWhite">Start 14 Days Free Trial</button>
+
+      </div>
+
+      <div class="footerTagsMainContainer">
+        <div class="tagsDivision companyTagsDivision">
+          <h4 class="footer-Headings">
+            Company
+          </h4>
+          <a href="###">About</a>
+          <a href="###">Features</a>
+          <a href="###">Works</a>
+          <a href="###">Career</a>
+        </div>
+        <div class="tagsDivision companyTagsDivision">
+          <h4 class="footer-Headings">
+            Help
+          </h4>
+          <a href="###">Customer Support
+            </a>
+          <a href="###">Delivery Details</a>
+          <a href="###">Terms & Conditions</a>
+          <a href="###">Privacy Policy</a>
+        </div>
+        <div class="tagsDivision companyTagsDivision">
+          <h4 class="footer-Headings">
+            Resources
+          </h4>
+          <a href="###">Free eBooks
+            </a>
+          <a href="###"> Development Tutorial</a>
+          <a href="###">How to - Blog</a>
+          <a href="###">Youtube Playlist</a>
+        </div>
+        <div class="tagsDivision companyTagsDivision">
+          <h4 class="footer-Headings">
+           Links
+          </h4>
+          <a href="###">Free eBooks
+          </a>
+        <a href="###"> Development Tutorial</a>
+        <a href="###">How to - Blog</a>
+        <a href="###">Youtube Playlist</a>
+        </div>
+      </div>
+
+    </footer>
+  
+    
+    
+
+    
+
+
+    
+    
+
+
+   
+    <script src="./index.js"></script>
+  </body>
+</html>
