@@ -19,7 +19,7 @@ This project is a web application for Habbit Challenges. It provides users with 
 The Habbit Challenges App is designed to help users improve their daily habits through engaging challenges. The app includes features like challenge tracking, customization options, user profiles, and more.
 
 ## Screenshots
-![Design preview for theMain Landing Page of Habit Challenges Website](./images/Landing Main Page.png);
+![Design preview for the Main Landing Page of Habit Challenges Website](./images/LandingMainPage.png)
 
 ## Features
 
