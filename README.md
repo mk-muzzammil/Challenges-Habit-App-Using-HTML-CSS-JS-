@@ -1,5 +1,6 @@
 # Challenges-Habit-App-Using-HTML-CSS-JS-
 I will take figma design of this project and Made this project for practising my HTML CSS  Javascript skills feel free to see and practise it by your own.
+<<<<<<< HEAD
 # Habbit Challenges App
 
 This project is a web application for Habbit Challenges. It provides users with the ability to track and participate in various challenges aimed at building better habits. The app offers features such as user customization, challenge progress tracking, and more.
@@ -60,3 +61,5 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 **Note:** This README is a template. Update the content according to your project's information and requirements.
+=======
+>>>>>>> 0a7b437d6ef0acbf222be4b1907500fa5fa8fe1c

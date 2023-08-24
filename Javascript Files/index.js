@@ -18,6 +18,6 @@ function openChallenges(evt, challengeType) {
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById(challengeType).style.display = "block";
+    document.getElementById(challengeType).style.display = "inline-block";
     evt.currentTarget.className += " active";
   }
