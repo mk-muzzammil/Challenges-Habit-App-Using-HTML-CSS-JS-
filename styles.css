@@ -1,48 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-:root {
-  --purple:rgba(108, 93, 211, 1);
-
-  --black:rgba(0,0,0,1);
-  --white:rgba(255, 255, 255, 1);
-  --light-white:rgba(255, 255, 255, 0.3);
-  --dark-gray-shade:rgba(94, 98, 114, 1);
-
-  --teal:
-  rgba(37, 192, 190, 1);
-  --pink:rgba(255, 162, 192, 1);
-  --red:rgba(231, 10, 10, 1);
-  --black-with-Grayish-Shade:
-  rgba(40, 42, 55, 1);
-  
-  
-  --blue-Color-For-Gradiant:rgba(43, 89, 255, 1);
-  --light-Purple-Color-For-Gradiant:
-rgba(187, 43, 255, 1);
-
-
-
-  
-  
-  --f-size: 16px;
-  
-}
-html,
-body {
-  font-family: 'Inter', sans-serif;
-}
-body{
-  background-color:#12151B;
-}
-
-
-
 /* ====================Utilities============= */
 .primary-Button{
   color: var(--white);
@@ -93,52 +48,12 @@ body{
 
 /* ====================== Main CSS=========== */
 
-.headerContainer{
-  display: flex;
-  flex-direction: column;
-}
+
 #heroHeading{
   width: 35rem;
   margin-block: 1rem;
 }
-.navBarContainer{
-  display:flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0.6rem;
-  position: relative;
-  
-}
-.centerAnchorTagsContainer{
-  display:flex;
-  flex-direction: row;
-  gap: 2rem;
-}
-.centerAnchorTagsContainer li{
-  list-style-type: none;
-}
-.centerAnchorTagsContainer li a{
-  text-decoration: none;
-  color:var(--white);
-  font-size: var(--f-size);
-  font-weight: 600;
-}
-.centerAnchorTagsContainer li a:hover{
-  color:var(--purple);
-}
-.rightNavdivision{
-  display: flex;
-  flex-direction: row;
-  gap:1rem;
-}
-#siginButton{
-  background: transparent;
-  border-radius: 5px;
-  border: 1px solid var(--light-white);
-  padding: 0.7rem 1.2rem;
-  font-weight: 500;
-}
+
 .mainBodyContainer{
   display: flex;
   flex-direction: column;
@@ -522,86 +437,9 @@ body{
   text-decoration: underline;
 }
 
-.Menu{
-  width: 2rem;
-  height: 1.5rem;
-  display: none;
-}
 
-.Menu:hover{
-  cursor: pointer;
-}
-.drowerMobile{
-  top: 4%;
-  position: absolute;
-  right: 2%;
-  z-index: 2;
-  height: 27rem;
-  width: 100%;
-  background-color: var(--black-with-Grayish-Shade);
-  border-radius: 10px;
-  padding: 1rem 1.5rem;
-  display: none;
-  transform: translateX(100%); /* Initially translate out of view */
-  transition: all 0.3s ease-in-out; /* Transition for smooth slide */
 
-}
-.showDrowerMoile{
-  display: block;
-  transform: translateX(0);
-}
-.drowerAnchorTagsContainer{
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 2rem;
-  align-items: center;
-}
-.drowerAnchorTagsContainer li{
-  list-style-type: none;
-}
-.drowerAnchorTagsContainer li a{
-  text-decoration: none;
-  color:var(--white);
-  font-size: var(--f-size);
-  font-weight: 600;
-}
 
-.drowerAnchorTagsContainer li a:hover{
-  color:var(--purple);
-  text-decoration: underline;
-}
-#closeIcon{
-  position: absolute;
-  right: 2%;
-  top:4%;
-  transition: all 0.3s ease-in;
-}
-#closeIcon:hover path {
-  cursor: pointer;
-  fill: var(--purple);
-  transition: all 0.3s ease-out;
-}
-
-.buttonContainer{
-  padding: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  gap:0.5rem; 
-}
-
-.SiginButtonDrower,.SignUpButtonDrower{
-  background: transparent;
-  border-radius: 5px;
-  border: 1px solid var(--light-white);
-  padding: 0.7rem 1.2rem;
-  font-weight: 500;
-}
-.SiginButtonDrower:hover,.SignUpButtonDrower:hover{
-  background-color: var(--purple) !important;
-  color: var(--white) !important;
-  cursor: pointer;
-}
 
 @media screen and (max-width:1070px) {
   .cardsChallengesContainer{
@@ -652,7 +490,7 @@ body{
     width: 90%;
   }
 }
-@media screen and (max-width:870px) {
+/* @media screen and (max-width:870px) {
   .centerAnchorTagsContainer{
     display: none;
   }
@@ -668,7 +506,7 @@ body{
   }
   
 
-}
+} */
 @media screen and (max-width:850px) {
   .cardsChallengesContainer{  
     grid-template-columns: repeat(2,1fr);
