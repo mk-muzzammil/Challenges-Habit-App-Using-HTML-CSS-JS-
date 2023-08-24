@@ -1,0 +1,124 @@
+body{
+  display: flex;
+  flex-direction: column;
+  background-image: url("./images/Pages-Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.AllChallengesSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.primary-headings{
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color:var(--white);
+}
+
+/* ==============Tabs Style=========== */
+.tabsContainer{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.tab {
+  overflow: hidden;
+  background-color: transparent
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background: transparent;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 4px 16px 4px 16px;
+  border-radius: 16px;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(94, 98, 114, 1);
+
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color:var(--purple);
+  color:var(--white);
+  font-weight: bolder;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color:var(--purple);
+  color:var(--white);
+  font-weight: bolder;
+
+}
+
+/* Style the tab content */
+.tabcontent {
+  /* display: none; */
+  
+}
+
+/* ==============challenge Card -======= */
+.challengeCard{
+  position: relative;
+  border: 1px solid white;
+  width: 300px;
+  height: 112px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; 
+  background-color: rgba(23, 30, 45, 1); 
+  border-radius: 15px;
+}
+.imageContentContainer{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  /* padding: 0 1rem; */
+}
+
+.secondary-Headings{
+  font-size: 16px;
+  font-weight: 700;
+  color:var(--white);
+}
+.descriptionChallenge{
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(128, 129, 145, 1);
+}
+.ProgressBar{
+  width: 100%;
+  height:3px;
+  box-shadow: 4px 10px 20px 0px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  background-color: rgba(94, 98, 114, 1);
+}
+#drinkWaterProgressBar{
+  width: 75%;
+  background-color: var(--pink) !important;
+}
+
+.challengeCard span:first-child{
+  position: absolute;
+  right: 3%;
+  top: 10%;
+  background-color: var(--pink);
+  border-radius: 10px;
+  padding: 0.2rem 0.5rem;
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
