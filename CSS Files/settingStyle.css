@@ -231,7 +231,11 @@ body {
   padding-block: 11px;
   padding-inline: 0.9rem;
 }
-
+.select-selected.select-arrow-active{
+  border-bottom-right-radius:0px; 
+  border-bottom-left-radius:0px;
+  
+}
 /*style items (options):*/
 .select-items {
   position: absolute;
@@ -240,6 +244,8 @@ body {
   left: 0;
   right: 0;
   z-index: 99;
+  border-bottom-right-radius:25px; 
+  border-bottom-left-radius:25px;
 }
 
 /*hide the items when the select box is closed:*/
