@@ -21,3 +21,9 @@ function openChallenges(evt, challengeType) {
     document.getElementById(challengeType).style.display = "inline-block";
     evt.currentTarget.className += " active";
   }
+  const darkModeSwitch = document.querySelector(".dark-mode-switch");
+
+  darkModeSwitch.addEventListener("click", () => {
+    darkModeSwitch.classList.toggle("active");
+    document.body.classList.toggle("dark-mode");
+  });
