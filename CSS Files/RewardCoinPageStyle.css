@@ -1,0 +1,109 @@
+body{
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/Pages-Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.rewardCoinSection{
+  width: 330px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+.primaryHeadings{
+  align-self: center;
+  font-size: 20px;
+  font-weight: 700;
+  color:var(--white);
+
+}
+#rewardHeroImage{
+  align-self: center;
+  width: 300px;
+  height: 250px;
+}
+#rewardCoinPoints{
+  align-self: center;
+  width: 150px;
+  height: 43px;
+}
+
+#poitsCollectionHeading{
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  color:rgba(128, 129, 145, 1);
+}
+.challengeCardsContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.challengeCard{
+  width: 100%;
+  background-color: rgba(27, 32, 42, 1);
+  padding: 1rem;
+  border-radius: 20px;
+}
+.imageContentContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.leftCOntainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+.secondary-Headings{
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  color: var(--white);
+}
+.descriptionChallenge{
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  color:rgba(128, 129, 145, 1);
+
+}
+
+.rightContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:0.3rem;
+
+}
+.points{
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  color:var(--white);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#poitsCollectionHeading{
+
+}

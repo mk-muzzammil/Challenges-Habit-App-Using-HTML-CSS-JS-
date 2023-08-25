@@ -1,0 +1,123 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Selection Style */
+::selection {
+  color: var(--selection);
+}
+
+/* Color Variables */
+:root {
+  --selection: rgba(255, 77, 0, 0.977);
+  --light-grey: #ccc;
+  --active-switch: #2196f3;
+  
+  --darkmode-bg: #171c28;
+  --darkmode-text: #f4f4f4;
+  --darkmode-links: #ffce06;
+
+  --lightmode-bg: #f4f4f4;
+  --lightmode-text: rgb(74, 71, 71);
+}
+
+/* Body Styles */
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/Pages-Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  background-color: var(--lightmode-bg);
+  color: var(--lightmode-text);
+  transition: all 0.3s ease, color 0.3s ease;
+}
+
+/* Setting Section Styles */
+.settingSection {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Setting Container Styles */
+.settingContainer {
+  width: 340px;
+  border: 1px solid red;
+}
+
+/* Primary Headings Styles */
+.primary-headings {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--darkmode-text); /* Fixed color value */
+}
+
+/* Input Container Styles */
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+/* Input Div Styles */
+.InputDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Dark Mode Switch Styles */
+.dark-mode-switch {
+  position: relative;
+  width: 50px;
+  height: 25px;
+  background-color: var(--light-grey);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode-switch:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 21px;
+  height: 21px;
+  background-color: var(--darkmode-bg);
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.dark-mode-switch.active {
+  background-color: var(--darkmode-text);
+}
+
+.dark-mode-switch.active:before {
+  background-color: var(--active-switch);
+  filter: drop-shadow(0px 0 15px #fff);
+  transform: translateX(25px);
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: var(--darkmode-bg);
+  color: var(--darkmode-text);
+}
+
+.dark-mode a {
+  color: var(--darkmode-links);
+}
+
+.dark-mode a:hover {
+  background-color: var(--darkmode-links);
+}
