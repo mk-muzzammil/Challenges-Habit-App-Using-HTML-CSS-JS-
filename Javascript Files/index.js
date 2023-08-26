@@ -1,6 +1,13 @@
 const hubergerIcon=document.querySelector('#menuIcon');
 const mobileDrower=document.querySelector('.drowerMobile');
 const closeIcon=document.querySelector('#closeIcon');
+const imageInput=document.querySelector('#imageInput');
+const imagePreview=document.querySelector('#imageShow');
+const dayInputFields=document.querySelectorAll('.input');
+
+
+
+
 hubergerIcon.addEventListener('click',()=>{
     mobileDrower.classList.add('showDrowerMoile');
 })
@@ -27,30 +34,84 @@ function openChallenges(evt, challengeType) {
   //   darkModeSwitch.classList.toggle("active");
   //   document.body.classList.toggle("dark-mode");
   // });
+  imageInput.addEventListener('change',changePhoto);
+
+function changePhoto(){
+  const filePath=imageInput.files;
+  if(imageInput.files.length > 0){
+  imagePreview.src=URL.createObjectURL(filePath[0]);
+
+  console.log(filePath[0].name);
+
+  imagePreview.style.borderRadius = "50%";
+  }
+  else{
+    const para=document.createElement('p');
+    para.textContent='No file selected';
+    imagePreview.appendChild(para);
+    
+  }
+}
+
+// const createElement=(id)=>{
+//   return `<div id="inputTask">
+//             <input type="text" id="taskInput${id}" placeholder="Enter name your Challenge">
+//             <img src="../images/saveImg.png" alt="Save File Image">
+//           </div>`
+// }
+
+const addEventListenerToDayInputFields=()=>{
+  dayInputFields.forEach((dayInputField)=>{
+    dayInputField.addEventListener('click',(event)=>{
+      const target=event.target;
+      const child1=target.children;
+      console.log(child1);
+      // const id=target.name;
+      // const targetParent=event.target.parentNode;
+
+      // target.removeAttribute('readonly');
+      
+      console.log(target);
+      
+      // const ele=createElement(id);
+      // targetParent.innerHTML=ele;
+
+      console.log(targetParent);
+
+    })
+  })
+
+
+
+}
+
+addEventListenerToDayInputFields();
+
+
+
+
 
   var x, i, j, l, ll, selElmnt, a, b, c;
-/* Look for any elements with the class "custom-select": */
+
 x = document.getElementsByClassName("custom-select");
 l = x.length;
 for (i = 0; i < l; i++) {
   selElmnt = x[i].getElementsByTagName("select")[0];
   ll = selElmnt.length;
-  /* For each element, create a new DIV that will act as the selected item: */
+  
   a = document.createElement("DIV");
   a.setAttribute("class", "select-selected");
   a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
   x[i].appendChild(a);
-  /* For each element, create a new DIV that will contain the option list: */
+
   b = document.createElement("DIV");
   b.setAttribute("class", "select-items select-hide");
   for (j = 1; j < ll; j++) {
-    /* For each option in the original select element,
-    create a new DIV that will act as an option item: */
+    
     c = document.createElement("DIV");
     c.innerHTML = selElmnt.options[j].innerHTML;
     c.addEventListener("click", function(e) {
-        /* When an item is clicked, update the original select box,
-        and the selected item: */
+        
         var y, i, k, s, h, sl, yl;
         s = this.parentNode.parentNode.getElementsByTagName("select")[0];
         sl = s.length;
@@ -74,8 +135,7 @@ for (i = 0; i < l; i++) {
   }
   x[i].appendChild(b);
   a.addEventListener("click", function(e) {
-    /* When the select box is clicked, close any other select boxes,
-    and open/close the current select box: */
+    
     e.stopPropagation();
     closeAllSelect(this);
     this.nextSibling.classList.toggle("select-hide");
@@ -84,8 +144,7 @@ for (i = 0; i < l; i++) {
 }
 
 function closeAllSelect(elmnt) {
-  /* A function that will close all select boxes in the document,
-  except the current select box: */
+  
   var x, y, i, xl, yl, arrNo = [];
   x = document.getElementsByClassName("select-items");
   y = document.getElementsByClassName("select-selected");
@@ -105,6 +164,4 @@ function closeAllSelect(elmnt) {
   }
 }
 
-/* If the user clicks anywhere outside the select box,
-then close all select boxes: */
 document.addEventListener("click", closeAllSelect);

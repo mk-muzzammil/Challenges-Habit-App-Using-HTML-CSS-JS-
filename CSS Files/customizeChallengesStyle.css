@@ -1,0 +1,144 @@
+body{
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/Pages-Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.primary-Headings{
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color:var(--white);
+  margin-bottom: 1rem;
+}
+.customizeChallengeSection{
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.inputsContainer{
+  width: 450px;
+  padding: 1rem;
+  background-color: rgba(21, 25, 34, 1);
+  display: flex;
+  flex-direction: column;
+}
+#imageInput{
+  opacity: 0;
+  display: none;
+}
+#imageShow{
+  width: 80px;
+  height:80px;
+}
+.InputDiv{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1rem;
+
+}
+#titleInput{
+  border-top: 2px solid rgba(108, 93, 211, 1);
+
+}
+.label{
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  text-align: left;
+  color:rgba(128, 129, 145, 1);
+}
+.InputDiv input{
+  color:rgba(128, 129, 145, 1);
+  font-size: 16px;
+  font-weight: 500;
+  padding-inline: 1rem;
+  border-radius: 0px 0px 20px 20px;
+  outline: none;
+  border: none;
+  background-color: rgba(27, 32, 42, 1);
+  height: 3rem;
+
+
+}
+.inputTask{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+
+}
+.showInputask{
+  display: flex;
+}
+
+.inputTask input{
+  border-radius: 10px;
+  width:100%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: rgba(27, 32, 42, 1);
+  height: 3rem;
+  padding-inline: 1rem;
+  color:rgba(128, 129, 145, 1);
+  font-size: 16px;
+  font-weight: 500;
+}
+.inputTask input::placeholder{
+  color:rgba(128, 129, 145, 1);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.InputDivDays{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.InputDivDays input{
+  background-color:rgba(27, 32, 42, 1);
+  height: 2.8rem;
+  border-radius: 10px;  
+  outline :none;
+  border:none;
+  width: 100%;
+  font-size: 16px;  
+  font-weight: 600;
+  text-align: left;
+  padding-inline: 0.7rem;
+  color: var(--white);
+}
+.InputDivDays input::placeholder{
+  color: var(--white);  
+
+}
+.primary-Buttons{
+  align-self: center;
+  width: 100%;
+  background-color: var(--purple);
+  outline:none;
+  border:none;
+  height: 46px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--white);
+}
+
+@media screen and (max-width:470px) {
+  .inputsContainer{
+    width: 340px;
+  }
+  
+}
