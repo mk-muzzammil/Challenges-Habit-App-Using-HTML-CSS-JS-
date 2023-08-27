@@ -60,23 +60,42 @@ function changePhoto(){
 //           </div>`
 // }
 
+
 const addEventListenerToDayInputFields=()=>{
   dayInputFields.forEach((dayInputField)=>{
     dayInputField.addEventListener('click',(event)=>{
       const target=event.target;
-      const child1=target.children;
-      console.log(child1);
       // const id=target.name;
-      // const targetParent=event.target.parentNode;
-
-      // target.removeAttribute('readonly');
+      const targetParent=event.target.parentNode;
       
-      console.log(target);
-      
-      // const ele=createElement(id);
-      // targetParent.innerHTML=ele;
+      const inputTask=targetParent.children[0];
+      const inputTaskInputField=inputTask.children[0];
+      const inputTaskSaveButton=inputTask.children[1];
+      const inputFeild=targetParent.children[1];
 
-      console.log(targetParent);
+
+      console.log(inputTask);
+      console.log(inputTaskInputField);
+      
+      inputFeild.classList.add('hideInput');
+      inputTask.classList.add('showInputask');
+
+      inputTaskSaveButton.addEventListener("click",()=>{
+        if(inputTaskInputField.value){
+          const value=inputTaskInputField.value;
+          inputFeild.textContent=value;
+          inputFeild.classList.remove('hideInput');
+          inputTask.classList.remove('showInputask');
+        }
+        else{
+          inputFeild.textContent='No Task';
+          inputFeild.classList.remove('hideInput');
+          inputTask.classList.remove('showInputask');
+        }
+
+
+      })
+      
 
     })
   })
