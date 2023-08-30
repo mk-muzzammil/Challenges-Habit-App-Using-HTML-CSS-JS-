@@ -436,6 +436,9 @@
   cursor: pointer;
   text-decoration: underline;
 }
+.cardAnchorTags{
+  text-decoration: none;
+}
 
 
 

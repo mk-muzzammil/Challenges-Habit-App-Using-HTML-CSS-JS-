@@ -74,7 +74,7 @@ const addEventListenerToDayInputFields=()=>{
       const inputFeild=targetParent.children[1];
 
 
-      console.log(inputTask);
+      // console.log(inputTask);
       console.log(inputTaskInputField);
       
       inputFeild.classList.add('hideInput');
@@ -83,7 +83,7 @@ const addEventListenerToDayInputFields=()=>{
       inputTaskSaveButton.addEventListener("click",()=>{
         if(inputTaskInputField.value){
           const value=inputTaskInputField.value;
-          inputFeild.textContent=value;
+          inputFeild.setAttribute('placeholder',value);
           inputFeild.classList.remove('hideInput');
           inputTask.classList.remove('showInputask');
         }
