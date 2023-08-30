@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile Page|Habit App</title>
+    <title>Language Setting|Habit App</title>
     <link rel="icon" href="../images/Frame.png" type=".png">
-    <link rel="stylesheet" href="../CSS Files/RewardCoinPageStyle.css"/>
+    <link rel="stylesheet" href="../CSS Files/languageSetting.css">
     <link rel="stylesheet" href="../CSS Files/headerNavBarStyle.css">
     <link rel="stylesheet" href="../CSS Files/utilities.css">
   </head>
@@ -33,6 +33,7 @@
           <a href="../HTML FIles/profilePage.html"><img src="../images/user-circle.svg" alt="User Icon"></a>
           <a href="../HTML FIles/languageSetting.html"><img src="../images/globe.svg" alt="Globe Icon"></a>
           
+          
         </div>
 
         <img class="Menu" id="menuIcon" src="../images/icon-menu.svg" alt="icon-menu">
@@ -48,102 +49,109 @@
           <li><a href="../HTML FIles/HideChallengesPage.html">Hide Challenges</a></li>
           <li><a href="../HTML FIles/settingPage.html">Setting</a></li>
         </ul>
+        
+          
           <div class="buttonContainer">
             <button class="primary-Button SiginButtonDrower" id="sigInButton">Sign in</button>
             <button class="primary-Button SignUpButtonDrower" id="signUpButton">Sign up</button>
 
           </div>
       </div>
+
+      <section class="languageSettingSection">
+
+        <h1 class="primary-headings">Select language</h1>
+
+        <div class="cardsContainer">
+
+          <div class="card">
+            <div class="leftContainer">
+              <img src="../images/United States.png" alt="American Flag Image">
+              <span class="languageSpan">English (United States)</span>
+
+            </div>
+            <div class="rightContainer">
+              <div class="container">
+                <div class="round">
+                  <input type="checkbox"  id="checkbox1" />
+                  <label for="checkbox1"></label>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="card">
+            <div class="leftContainer">
+              <img src="../images/india.png" alt="India Flag Image">
+              <span class="languageSpan">Hindi (India)</span>
+
+            </div>
+            <div class="rightContainer">
+              <div class="container">
+                <div class="round">
+                  <input type="checkbox"  id="checkbox2" />
+                  <label for="checkbox2"></label>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="card">
+            <div class="leftContainer">
+              <img src="../images/united Kingdom.png" alt="UK Flag Image">
+              <span class="languageSpan">United Kingdom</span>
+
+            </div>
+            <div class="rightContainer">
+              <div class="container">
+                <div class="round">
+                  <input type="checkbox"  id="checkbox3" />
+                  <label for="checkbox3"></label>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="card">
+            <div class="leftContainer">
+              <img src="../images/Germany.png" alt="Germany Flag Image">
+              <span class="languageSpan">German</span>
+
+            </div>
+            <div class="rightContainer">
+              <div class="container">
+                <div class="round">
+                  <input type="checkbox" id="checkbox4"/>
+                  <label for="checkbox4"></label>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+
+
+
+
+
+        </div>
+
+        <button class="primary-buttons">Continue</button>
+
+      </section>
+
+
+
+
+
+
+
+     
+
     </header>
-
-    <section class="rewardCoinSection">
-      <h4 class="primaryHeadings">Reward Coin</h4>
-
-      <img  id="rewardHeroImage" src="../images/rewardCoin.png" alt="Reward Coin Image">
-      <div class="pointsContainer">
-        <img src="../images/coins Image.png" alt="Coins Image">
-        <span id="biggerPointsSpan">600<span id="smallPointsSpan">points</span></span>
-      </div>
-
-      <h6 id="poitsCollectionHeading">Points Collection History</h6>
-
-      <div class="challengeCardsContainer">
-
-        <div class="challengeCard" id="doExcerciseChallengeCard">
-
-          <div class="imageContentContainer">
-            <div class="leftCOntainer">
-              <img src="../images/03.png">
-              <div class="cardContentContainer">
-                <h4 class="secondary-Headings" id="doExcercise">Do Excercise</h4>
-                <span class="descriptionChallenge">Change your batteries</span>
-      
-              </div>
-
-              
-            </div>
-            <div class="rightContainer">
-              <img src="../images/coin 2.svg" alt="Coin Image">
-              <span class="points">2 points</span>
-            </div>
-            
-          </div>
-        
-        </div>
-        <div class="challengeCard" id="doExcerciseChallengeCard">
-
-          <div class="imageContentContainer">
-            <div class="leftCOntainer">
-              <img src="../images/04.png">
-              <div class="cardContentContainer">
-                <h4 class="secondary-Headings" id="doExcercise">Mediation</h4>
-                <span class="descriptionChallenge">Healthy mind & body</span>
-      
-              </div>
-
-              
-            </div>
-            <div class="rightContainer">
-              <img src="../images/coin 2.svg" alt="Coin Image">
-              <span class="points">2 points</span>
-            </div>
-            
-          </div>
-        
-        </div>
-        <div class="challengeCard" id="doExcerciseChallengeCard">
-
-          <div class="imageContentContainer">
-            <div class="leftCOntainer">
-              <img src="../images/02.png">
-              <div class="cardContentContainer">
-                <h4 class="secondary-Headings" id="doExcercise">Read Book</h4>
-                <span class="descriptionChallenge">Focus</span>
-      
-              </div>
-
-              
-            </div>
-            <div class="rightContainer">
-              <img src="../images/coin 2.svg" alt="Coin Image">
-              <span class="points">2 points</span>
-            </div>
-            
-          </div>
-        
-        </div>
-
-    </div>
-
-      
-
-      
-
-
-
-    </section>
     
    
     <script src="../Javascript Files/index.js"></script>
+
   </body>
 </html>

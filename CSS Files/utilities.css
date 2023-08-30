@@ -25,6 +25,16 @@
   --blue-Color-For-Gradiant:rgba(43, 89, 255, 1);
   --light-Purple-Color-For-Gradiant:
 rgba(187, 43, 255, 1);
+--selection: rgba(255, 77, 0, 0.977);
+  --light-grey: #ccc;
+  --active-switch: #2196f3;
+  
+  --darkmode-bg: #171c28;
+  --darkmode-text: #f4f4f4;
+  --darkmode-links: #ffce06;
+
+  --lightmode-bg: #f4f4f4;
+  --lightmode-text: rgb(74, 71, 71);
 
 
 
