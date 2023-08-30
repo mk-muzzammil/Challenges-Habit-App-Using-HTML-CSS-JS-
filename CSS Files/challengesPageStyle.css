@@ -131,6 +131,10 @@ body{
   border: none;
   outline: none;
 }
+
+.dayAnchorTag{
+  text-decoration: none;
+}
 @media screen and (max-width: 500px) {
   .challengeSection{
     width:340px;

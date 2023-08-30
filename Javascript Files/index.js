@@ -4,15 +4,17 @@ const closeIcon=document.querySelector('#closeIcon');
 const imageInput=document.querySelector('#imageInput');
 const imagePreview=document.querySelector('#imageShow');
 const dayInputFields=document.querySelectorAll('.input');
-
+const mainBody=document.querySelector('.mainBody');
 
 
 
 hubergerIcon.addEventListener('click',()=>{
     mobileDrower.classList.add('showDrowerMoile');
+    mainBody.style.overflow='hidden';
 })
 closeIcon.addEventListener('click',()=>{
     mobileDrower.classList.remove('showDrowerMoile');
+    mainBody.style.overflow='auto';
 })
 
 function openChallenges(evt, challengeType) {

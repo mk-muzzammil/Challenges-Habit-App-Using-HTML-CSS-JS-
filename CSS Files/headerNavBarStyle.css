@@ -93,7 +93,7 @@ body{
   position: absolute;
   right: 2%;
   z-index: 2;
-  height: 27rem;
+  height: 100vh;
   width: 100%;
   background-color: var(--black-with-Grayish-Shade);
   border-radius: 10px;
