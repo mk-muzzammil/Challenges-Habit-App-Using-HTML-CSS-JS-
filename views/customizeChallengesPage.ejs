@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customize Challenge|Habit App</title>
+  <link rel="icon" href="./images/Frame.png" type=".png">
+  <link rel="stylesheet" href="../CSS Files/customizeChallengesStyle.css" />
+  <link rel="stylesheet" href="../CSS Files/headerNavBarStyle.css">
+  <link rel="stylesheet" href="../CSS Files/utilities.css">
+</head>
+
+<body>
+
+  <header class="headerContainer">
+
+    <%- include("./Partials/navbar")%>
+      <div class="drowerMobile">
+        <svg id="closeIcon" width="14" height="15" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+            fill="#ffffff" fill-rule="evenodd" />
+        </svg>
+
+        <ul class="drowerAnchorTagsContainer">
+          <li><a href="/">Home</a></li>
+          <li><a href="/AllChallengesPage">Challenge</a></li>
+          <li><a href="###">Notification</a></li>
+          <li><a href="/HideChallengesPage">Hide Challenges</a></li>
+          <li><a href="/settingPage">Setting</a></li>
+        </ul>
+        <div class="buttonContainer">
+          <button class="primary-Button SiginButtonDrower" id="sigInButton">Sign in</button>
+          <button class="primary-Button SignUpButtonDrower" id="signUpButton">Sign up</button>
+
+        </div>
+      </div>
+
+      <h4 class="primary-Headings">Customize Challenges</h4>
+
+      <form method="post" action="/customizeChallengesPage" class="customizeChallengeSection" enctype="multipart/form-data">
+
+
+        <label for="imageInput" class="avatarImageContainerInput">
+          <img id="imageShow" src="./images/imageInput.svg" alt="Image Input Icon">
+        </label>
+        <input type="file" id="imageInput" accept=".jpg, .jpeg, .png" name="imageInput">
+
+
+        <div class="inputsContainer">
+          <div class="InputDiv">
+            <label class="label" for="titleInput">Challenge Title</label>
+            <input type="text" id="titleInput" placeholder="Enter title" name="title">
+          </div>
+
+          <div class="InputDiv">
+            <label class="label" for="descriptionInput">Discription</label>
+            <input type="text" id="descriptionInput" placeholder="Enter description" name="description">
+          </div>
+          <div class="InputDiv">
+            <label class="label" for="taskInput">Enter your tasks</label>
+
+          </div>
+
+          <div class="InputDivDays" id="InputDivDays">
+
+            <div>
+              <div class="input-image-display">
+
+                <input class="input" type="text" name="day_01" id="day1Input" value="" placeholder="Day 1"></input>
+                <img src="./images/saveImg.png" alt="Save File Image" class="inputTask">
+              </div>
+
+            </div>
+
+            <div>
+              <div class="input-image-display">
+
+                <input class="input" type="text" name="day_02" id="day2Input" value="" placeholder="Day 2"></input>
+                <img src="./images/saveImg.png" alt="Save File Image" class="inputTask">
+              </div>
+
+            </div>
+
+            <div>
+              <div class="input-image-display">
+
+                <input class="input" type="text" name="day_03" id="day3Input" value="" placeholder="Day 3"></input>
+                <img src="./images/saveImg.png" alt="Save File Image" class="inputTask">
+              </div>
+
+            </div>
+
+            <div>
+              <div class="input-image-display">
+
+                <input class="input" type="text" name="day_04" id="day4Input" value="" placeholder="Day 4"></input>
+                <img src="./images/saveImg.png" alt="Save File Image" class="inputTask">
+              </div>
+
+            </div>
+
+            <div>
+              <div class="input-image-display">
+
+                <input class="input" type="text" name="day_05" id="day5Input" value="" placeholder="Day 5"></input>
+                <img src="./images/saveImg.png" alt="Save File Image" class="inputTask">
+              </div>
+
+            </div>
+
+            <div>
+              <div class="input-image-display">
+
+                <input class="input" type="text" name="day_06" id="day6Input" value="" placeholder="Day 6"></input>
+                <img src="./images/saveImg.png" alt="Save File Image" class="inputTask">
+              </div>
+
+            </div>
+
+            <div>
+              <div class="input-image-display">
+
+                <input class="input" type="text" name="day_07" id="day7Input" value="" placeholder="Day 7"></input>
+                <img src="./images/saveImg.png" alt="Save File Image" class="inputTask">
+              </div>
+
+            </div>
+
+            <div>
+              <div class="input-image-display">
+
+                <input class="input" type="text" name="day_08" id="day8Input" value="" placeholder="Day 8"></input>
+                <img src="./images/saveImg.png" alt="Save File Image" class="inputTask">
+              </div>
+
+            </div>
+
+            <div>
+              <div class="input-image-display">
+
+                <input class="input" type="text" name="day_09" id="day9Input" value="" placeholder="Day 9"></input>
+                <img src="./images/saveImg.png" alt="Save File Image" class="inputTask">
+              </div>
+
+            </div>
+
+
+            <div>
+              <div class="input-image-display">
+
+                <input class="input" type="text" name="day_10" id="day10Input" value="" placeholder="Day 10"></input>
+                <img src="./images/saveImg.png" alt="Save File Image" class="inputTask">
+              </div>
+
+            </div>
+
+            <div>
+              <div class="input-image-display">
+
+                <input class="input" type="text" name="day_11" id="day11Input" value="" placeholder="Day 11"></input>
+                <img src="./images/saveImg.png" alt="Save File Image" class="inputTask">
+              </div>
+
+            </div>
+
+            <div>
+              <div class="input-image-display">
+
+                <input class="input" type="text" name="day_12" id="day12Input" value="" placeholder="Day 12"></input>
+                <img src="./images/saveImg.png" alt="Save File Image" class="inputTask">
+              </div>
+
+            </div>
+
+
+            <div>
+              <div class="input-image-display">
+
+                <input class="input" type="text" name="day_13" id="day13Input" value="" placeholder="Day 13"></input>
+                <img src="./images/saveImg.png" alt="Save File Image" class="inputTask">
+              </div>
+
+            </div>
+
+            <div>
+              <div class="input-image-display">
+
+                <input class="input" type="text" name="day_14" id="day14Input" value="" placeholder="Day 14"></input>
+                <img src="./images/saveImg.png" alt="Save File Image" class="inputTask">
+              </div>
+
+            </div>
+
+            <div>
+              <div class="input-image-display">
+
+                <input class="input" type="text" name="day_15" id="day15Input" value="" placeholder="Day 15"></input>
+                <img src="./images/saveImg.png" alt="Save File Image" class="inputTask">
+              </div>
+
+            </div>
+
+            <div>
+              <div class="input-image-display">
+
+                <input class="input" type="text" name="day_16" id="day16Input" value="" placeholder="Day 16"></input>
+                <img src="./images/saveImg.png" alt="Save File Image" class="inputTask">
+              </div>
+
+            </div>
+
+            <div>
+              <div class="input-image-display">
+
+                <input class="input" type="text" name="day_17" id="day17Input" value="" placeholder="Day 17"></input>
+                <img src="./images/saveImg.png" alt="Save File Image" class="inputTask">
+              </div>
+
+            </div>
+
+            <div>
+              <div class="input-image-display">
+
+                <input class="input" type="text" name="day_18" id="day18Input" value="" placeholder="Day 18"></input>
+                <img src="./images/saveImg.png" alt="Save File Image" class="inputTask">
+              </div>
+
+            </div>
+
+          </div>
+
+          <input type="submit" value="Save" class="primary-Buttons" id="saveButton" >
+          
+
+        </div>
+      </form>
+
+
+
+  </header>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="../Javascript Files/index.js"></script>
+  <!-- <script src="../Javascript Files/customize-challenge.js"></script> -->
+</body>
+
+</html>
