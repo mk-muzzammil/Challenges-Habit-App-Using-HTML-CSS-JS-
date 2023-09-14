@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongoose": "^7.5.1",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.0.1"
+  },
+  "name": "challenges-habit-app-using-html-css-js--master",
+  "description": "I will take figma design of this project and Made this project for practising my HTML CSS  Javascript skills feel free to see and practise it by your own. <<<<<<< HEAD # Habbit Challenges App",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

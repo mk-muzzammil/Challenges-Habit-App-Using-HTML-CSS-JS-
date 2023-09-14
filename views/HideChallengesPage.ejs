@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hide Challenges Page|Habit App</title>
+  <link rel="icon" href="../images/Frame.png" type=".png">
+  <link rel="stylesheet" href="../CSS Files/hideChallengesStyle.css" />
+  <link rel="stylesheet" href="../CSS Files/headerNavBarStyle.css">
+  <link rel="stylesheet" href="../CSS Files/utilities.css">
+</head>
+
+<body>
+
+  <header class="headerContainer">
+
+    <%- include("./Partials/navbar")%>
+      <div class="drowerMobile">
+        <svg id="closeIcon" width="14" height="15" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+            fill="#ffffff" fill-rule="evenodd" />
+        </svg>
+
+        <ul class="drowerAnchorTagsContainer">
+          <li><a href="/">Home</a></li>
+          <li><a href="/AllChallengesPage">Challenge</a></li>
+          <li><a href="###">Notification</a></li>
+          <li><a href="/HideChallengesPage">Hide Challenges</a></li>
+          <li><a href="/settingPage">Setting</a></li>
+        </ul>
+
+
+        <div class="buttonContainer">
+          <button class="primary-Button SiginButtonDrower" id="sigInButton">Sign in</button>
+          <button class="primary-Button SignUpButtonDrower" id="signUpButton">Sign up</button>
+
+        </div>
+      </div>
+
+      <section class="hideChallengesSection">
+
+        <h1 class="primary-headings">Hide Challenges</h1>
+
+        <div class="hideChallengesCardsContainer">
+          <div class="challengeCardContainer">
+            <div class="challengeCard" id="drinkwaterChallengeCard">
+
+              <span class="statusSpan" id="drinkWaterStatusSpan">15/18</span>
+              <img class="eyeIcon" src="./images/eye.png" alt="Eye">
+              <div class="imageContentContainer">
+                <img src="./images/01.png">
+                <div class="cardContentContainer">
+                  <h4 class="secondary-Headings" id="drink water">Drink Water</h4>
+                  <span class="descriptionChallenge">Detox</span>
+                </div>
+
+              </div>
+
+              <div class="ProgressBar">
+                <div class="Progress" id="drinkWaterProgressBar"></div>
+              </div>
+
+            </div>
+          </div>
+          <div class="challengeCardContainer">
+            <div class="challengeCard" id="readBookChallengeCard">
+
+              <span class="statusSpan" id="readBookStatusSpan">10/18</span>
+              <img class="eyeIcon" src="./images/eye.png" alt="Eye Icon">
+              <div class="imageContentContainer">
+                <img src="./images/02.png">
+                <div class="cardContentContainer">
+                  <h4 class="secondary-Headings" id="readBook">Read Book</h4>
+                  <span class="descriptionChallenge">Focus</span>
+                </div>
+
+              </div>
+
+              <div class="ProgressBar">
+                <div class="Progress" id="readBookProgressBar"></div>
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="challengeCardContainer">
+            <div class="challengeCard" id=doExcerciseChallengeCard">
+
+              <span class="statusSpan" id="doExcerciseStatusSpan">15/18</span>
+              <img class="eyeIcon" src="./images/eye.png" alt="Eye Icon">
+              <div class="imageContentContainer">
+                <img src="./images/03.png">
+                <div class="cardContentContainer">
+                  <h4 class="secondary-Headings" id="doExcercise">Do Excercise</h4>
+                  <span class="descriptionChallenge">Change your batteries</span>
+                </div>
+
+              </div>
+              <div class="ProgressBar">
+                <div class="Progress" id="doExcerciseProgressBar"></div>
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="challengeCardContainer">
+            <div class="challengeCard" id="mediationChallengeCard">
+
+              <span class="statusSpan" id="mediationStatusSpan">5/18</span>
+              <img class="eyeIcon" src="./images/eye.png" alt="Eye Icon">
+              <div class="imageContentContainer">
+                <img src="./images/04.png">
+                <div class="cardContentContainer">
+                  <h4 class="secondary-Headings" id="meditation">Mediation</h4>
+                  <span class="descriptionChallenge">Healthy mind & body</span>
+                </div>
+
+              </div>
+              <div class="ProgressBar">
+                <div class="Progress" id="mediationProgressBar"></div>
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+  </header>
+
+
+  <script src="../Javascript Files/index.js"></script>
+
+</body>
+
+</html>

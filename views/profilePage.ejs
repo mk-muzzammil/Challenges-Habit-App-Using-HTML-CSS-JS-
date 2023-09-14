@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page|Habit App</title>
+    <link rel="icon" href="../images/Frame.png" type=".png">
+    <link rel="stylesheet" href="../CSS Files/profilePageStyle.css"/>
+    <link rel="stylesheet" href="../CSS Files/headerNavBarStyle.css">
+    <link rel="stylesheet" href="../CSS Files/utilities.css">
+  </head>
+  <body>
+    
+    <header class="headerContainer">
+
+      <%- include("./Partials/navbar")%>
+      <div class="drowerMobile">
+        <svg  id="closeIcon" width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#ffffff" fill-rule="evenodd"/></svg>
+        
+        <ul class="drowerAnchorTagsContainer">
+          <li><a href="/">Home</a></li>
+          <li><a href="/AllChallengesPage">Challenge</a></li>
+          <li><a href="###">Notification</a></li>
+          <li><a href="/HideChallengesPage">Hide Challenges</a></li>
+          <li><a href="/settingPage">Setting</a></li>
+        </ul>
+          <div class="buttonContainer">
+            <button class="primary-Button SiginButtonDrower" id="sigInButton">Sign in</button>
+            <button class="primary-Button SignUpButtonDrower" id="signUpButton">Sign up</button>
+
+          </div>
+      </div>
+
+      <div class="iconsDivision">
+        
+        <img src="./images/Arrow - Left Square.svg" alt="Back Arrow icon">
+      
+        <div class="centerContainer">
+          <h4 class="primary-headings" >profile</h4>
+        </div>  
+      
+      <div class="rightIconContainer">
+        <a href="/RewardCoinPage"><img src="./images/coin 1.svg" alt="coin Icon"></a>
+        
+      </div>
+
+      </div>
+
+      <section class="profileSectionContainer">
+
+        <div class="avatarImageContainer">
+          <img src="./images/Avatar.svg" alt="Avatar Image">
+        </div>
+        <h4 id="profileName" class="primary-headings" >Muhammad Muzzammil <img src="./images/EditProfile.svg" alt="Edit icon"></h4>
+
+        <button class="primary-buttons">
+          <a href="###" id="viewChallengesButton" >View Challenges</a> 
+        </button>
+
+        <div class="inputContainer">
+          <div class="InputDiv">
+            <label class="label" for="emailInput">Email</label>
+            <input type="email" id="emailInput" placeholder="ThaoLee@gmail.com">
+          </div>
+          <div class="InputDiv">
+            <label class="label" for="genderInput">Gender</label>
+            <input type="text" id="genderInput" placeholder="Male">
+          </div>
+          
+        </div>
+
+      
+      </section>
+
+    
+
+    </header>
+    
+   
+    <script src="../Javascript Files/index.js"></script>
+  </body>
+</html>

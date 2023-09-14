@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>setting Page|Habit App</title>
+    <link rel="icon" href="./images/Frame.png" type=".png">
+    <link rel="stylesheet" href="../CSS Files/settingStyle.css"/>
+    <link rel="stylesheet" href="../CSS Files/headerNavBarStyle.css">
+    <link rel="stylesheet" href="../CSS Files/utilities.css">
+  </head>
+  <body>
+    
+    <header class="headerContainer">
+
+      <%- include("./Partials/navbar")%>
+      <div class="drowerMobile">
+        <svg  id="closeIcon" width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#ffffff" fill-rule="evenodd"/></svg>
+        
+        <ul class="drowerAnchorTagsContainer">
+          <li><a href="/">Home</a></li>
+          <li><a href="/AllChallengesPage">Challenge</a></li>
+          <li><a href="###">Notification</a></li>
+          <li><a href="/HideChallengesPage">Hide Challenges</a></li>
+          <li><a href="/settingPage">Setting</a></li>
+        </ul>
+        
+          
+          <div class="buttonContainer">
+            <button class="primary-Button SiginButtonDrower" id="sigInButton">Sign in</button>
+            <button class="primary-Button SignUpButtonDrower" id="signUpButton">Sign up</button>
+
+          </div>
+      </div>
+
+      <section class="settingSection">
+
+        <h1 class="primary-headings">Setting</h1>
+
+        <div class="settingContainer">
+          <div class="inputsContainer">
+            <div class="InputDiv">
+              <label class="label" for="emailInput">Change Mode</label>
+              <div class="input">
+                <h4 class="inputLabel">Dark Mode </h4>
+                <img src="./images/Dark Mode.png" alt="Dark Mode Image">
+              </div>
+              <div class="inputCheckBox">
+                <label class="checkboxLabel" for="darkModeCheckBox">Adapts to your mobile screen settings</label>
+                <label class="label container">
+                  <input type="checkbox" id="darkModeCheckBox">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+            <div class="InputDiv">
+
+              <label class="label" for="genderInput">Change Language</label>
+              <div class="custom-select">
+              <select id="languageDropdown" name="languages">
+                <option class="inputLabel" value="English">English(US)</option>
+                <option class="inputLabel" value="Urdu">Urdu</option>
+                <option class="inputLabel" value="Hindi">Hindi</option>
+              </select>
+            
+            </div>
+
+
+            </div>
+
+            <div class="InputDiv">
+              <label class="label" for="notificationSwitch">Notification Sound </label>
+              <div class="input">
+                <label class="inputLabel" for="notificationSwitch">Notification Sound </label>
+                <label class="switch">
+                  <input type="checkbox" id="notificationSwitch">
+                  <span class="slider round"></span>
+                </label>
+              </div>
+              
+
+            </div>
+            <div class="InputDiv">
+              <label class="label" for="notificationDisplay">Notification Display</label>
+              <div class="input">
+                <label class="inputLabel" for="notificationDisplay">Notification Display</label>
+                <label class="switch">
+                  <input type="checkbox" id="notificationDisplay">
+                  <span class="slider round"></span>
+                </label>
+              </div>
+              
+
+            </div>
+
+            
+          </div>
+
+
+
+
+        </div>
+
+
+        
+        
+
+      </section>
+
+
+
+
+
+
+
+     
+
+    </header>
+    
+   
+    <script src="../Javascript Files/index.js"></script>
+
+  </body>
+</html>
