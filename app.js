@@ -6,7 +6,7 @@ const routes  = require ("./routes/routes");
 const app = express();
 
 const staticPath = path.join(__dirname,"/public");
-const port = 8000;
+const port = 7000;
 
 
 // middleware
