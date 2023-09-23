@@ -9,7 +9,7 @@ const staticPath = path.join(__dirname,"/public");
 const port = 8000;
 
 
-//middleware
+// middleware
 
 app.use(express.static(staticPath))
 app.use(express.json())
