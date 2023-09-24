@@ -46,7 +46,7 @@ let settingPage = (req, res) => {
     res.render("settingPage")
 }
 
-let addChallenges = () => {
+let addChallenges = (req,res) => {
     upload(req, res, (err) => {
         if (err) {
             console.log(err);
@@ -83,6 +83,7 @@ let addChallenges = () => {
 
             newChallenge.save().then(() => {
                 console.log("data has been saved in database");
+                res.status(201).redirect("/customizeChallengesPage")
             }).catch(() => {
                 console.log("data has not been saved in database");
 
@@ -90,7 +91,7 @@ let addChallenges = () => {
         }
     })
 
-    res.status("201").redirect("/customizeChallengesPage")
+    
 }
 
 

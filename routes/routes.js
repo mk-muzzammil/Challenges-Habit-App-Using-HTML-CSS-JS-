@@ -18,39 +18,36 @@ const route = new express.Router();
 
 
 //routes
-route.get("/", homePage);
+route.route("/").get(homePage);
 
 
 
-route.get("/AllChallengesPage", AllChallengesPage)
+route.route("/AllChallengesPage").get( AllChallengesPage)
 
 
-route.get("/ChallengeDayPage", ChallengeDayPage)
+route.route("/ChallengeDayPage").get( ChallengeDayPage)
 
-route.get("/challengePage", challengePage)
+route.route("/challengePage").get( challengePage)
 
-route.get("/customizeChallengesPage", customizeChallengesPage)
+route.route("/customizeChallengesPage").get( customizeChallengesPage).post(addChallenges)
 
-route.get("/HideChallengesPage", HideChallengesPage)
+route.route("/HideChallengesPage").get( HideChallengesPage)
 
-route.get("/languageSetting", languageSetting)
-
-
-route.get("/profilePage", profilePage)
+route.route("/languageSetting").get( languageSetting)
 
 
-route.get("/RewardCoinPage", RewardCoinPage)
+route.route("/profilePage").get( profilePage)
 
-route.get("/settingPage", settingPage)
+
+route.route("/RewardCoinPage").get( RewardCoinPage)
+
+route.route("/settingPage").get( settingPage)
 
 
 route.get("*", (req, res) => {
     res.send("Page not found")
 
 })
-
-route.post("/customizeChallengesPage", addChallenges)
-
 
 
 module.exports = route
