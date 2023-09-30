@@ -6,6 +6,9 @@ const Challenges = require("../model/challenge_Schema");
 let homePage = (req, res) => {
     res.render("index")
 }
+let signinPage = (req, res) => {
+    res.render("login_signup")
+}
 
 let AllChallengesPage = (req, res) => {
     res.render("AllChallengesPage")
@@ -96,6 +99,7 @@ let addChallenges = (req,res) => {
 
 
 module.exports = { homePage,
+    signinPage,
     AllChallengesPage,
     ChallengeDayPage,
     challengePage,
