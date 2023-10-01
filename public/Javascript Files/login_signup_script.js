@@ -24,6 +24,7 @@ signupbtn.addEventListener("click", (e) => {
     signincontainer.style.transform = "translateY(200%)";
     signupcontainer.style.transform = "translateX(5%)";
     signinbtn.classList.add("signin-inactive")
+    signinbtn.style.width = "55%";
     signupbtn_02.style.background = "white"
     signupbtn_02.style.color = "black"
     setTimeout(() => {
@@ -45,6 +46,7 @@ signinbtn.addEventListener("click", async (e) => {
 
     signupbtn_02.style.background = "transparent"
     signupbtn_02.style.color = "white"
+    signinbtn.style.width = "90%";
 
 
     signincontainer.style.transform = "translateY(0%)";
