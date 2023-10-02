@@ -62,11 +62,11 @@ signinbtn.addEventListener("click", async (e) => {
 })
 
 
-signinbtn_02.addEventListener("click", (e)=>{
-    alert("Sign in failed")
-})
+// signinbtn_02.addEventListener("click", (e)=>{
+//     alert("Sign in failed")
+// })
 
 
-signupbtn_02.addEventListener("click", (e)=>{
-    alert("Sign up failed")
-})
+// signupbtn_02.addEventListener("click", (e)=>{
+//     alert("Sign up failed")
+// })

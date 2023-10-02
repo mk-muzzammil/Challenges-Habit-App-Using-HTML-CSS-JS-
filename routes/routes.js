@@ -2,6 +2,8 @@ const express = require("express");
 
 const { homePage,
     signinPage,
+    createAccount,
+    getUserAccount,
     AllChallengesPage,
     ChallengeDayPage,
     challengePage,
@@ -23,6 +25,8 @@ route.route("/").get(homePage);
 
 
 route.route("/login%signup").get(signinPage)
+route.route("/login").post(getUserAccount)
+route.route("/signup").post(createAccount)
 route.route("/AllChallengesPage").get(AllChallengesPage)
 
 

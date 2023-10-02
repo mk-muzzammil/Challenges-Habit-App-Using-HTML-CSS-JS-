@@ -19,19 +19,19 @@
         <div class="singin-container">
             <div class="sign-from-container">
                 <h2 class="prmiary-heading">Sign in to your account</h2>
-                <form action="#" class="form">
-                    <label for="username">Username</label>
-                    <input type="text" id="username" placeholder="Enter your username">
+                <form action="/login" class="form" method="post">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Enter your username" name="email">
 
 
                     <label for="password">Password</label>
-                    <input type="password" id="password" placeholder="Enter your password">
+                    <input type="password" id="password" placeholder="Enter your password" name="password">
 
 
+                    <button id="signin" type="submit">Sign in</button>
 
                 </form>
 
-                <button id="signin">Sign in</button>
 
             </div>
 
@@ -53,27 +53,27 @@
         <div class="signup-container">
             <div class="signup-from-container">
                 <h2 class="prmiary-heading">Create your account</h2>
-                <form action="#" class="form signup-from">
+                <form action="/signup" method="post" class="form signup-from" >
 
                     <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Enter your name">
+                    <input type="text" id="name" placeholder="Enter your name" name="username">
 
                     <label for="email">Email</label>
-                    <input type="text" id="email" placeholder="Enter your email">
+                    <input type="text" id="email" placeholder="Enter your email" name="email">
 
                     <label for="password">Password</label>
-                    <input type="password" id="password" placeholder="Enter your password">
+                    <input type="password" id="password" placeholder="Enter your password" name="password">
 
                     <label for="gender">Select Gender</label>
                     <div class="gender-container">
 
-                        Male:<input type="radio" class="gender" name="gender" value="Male">
+                        Male:<input type="radio" class="gender" name="gender" value="Male" checked>
                         Female<input type="radio" class="gender" name="gender" value="Female">
                     </div>
 
+                    <button id="signup" type="submit">Sign Up</button>
 
                 </form>
-                <button id="signup">Sign Up</button>
             </div>
 
             <div class="for-old-user">
