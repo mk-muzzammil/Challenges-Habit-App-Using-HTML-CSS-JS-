@@ -36,17 +36,17 @@ route.route("/challengePage").get(challengePage)
 
 route.route("/customizeChallengesPage").get(customizeChallengesPage).post(addChallenges)
 
-route.route("/HideChallengesPage").get(HideChallengesPage)
+route.route("/HideChallengesPage").get(HideChallengesPage);
 
-route.route("/languageSetting").get(languageSetting)
-
-
-route.route("/profilePage").get(profilePage)
+route.route("/languageSetting").get(languageSetting);
 
 
-route.route("/RewardCoinPage").get(RewardCoinPage)
+route.route("/profilePage").get(profilePage);
 
-route.route("/settingPage").get(settingPage)
+
+route.route("/RewardCoinPage").get(RewardCoinPage);
+
+route.route("/settingPage").get(settingPage);
 
 
 route.get("*", (req, res) => {
