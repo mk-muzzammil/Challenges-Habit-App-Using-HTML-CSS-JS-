@@ -1,5 +1,8 @@
 const upload = require("../Middleware/multer");
 const Challenges = require("../model/challenge_Schema");
+const signUp = require("../model/signup_schema");
+const bcrypt = require("bcryptjs");
+
 
 
 
@@ -49,7 +52,7 @@ let settingPage = (req, res) => {
     res.render("settingPage")
 }
 
-let addChallenges = (req,res) => {
+let addChallenges = (req, res) => {
     upload(req, res, (err) => {
         if (err) {
             console.log(err);
@@ -94,12 +97,65 @@ let addChallenges = (req,res) => {
         }
     })
 
-    
+
 }
 
 
-module.exports = { homePage,
+let createAccount = async (req, res) => {
+
+    const user = new signUp({
+        username: req.body.username,
+        email: req.body.email,
+        gneder: req.body.gender,
+        password: req.body.password,
+    });
+
+    user.save().then(() => {
+        console.log("Account created");
+        res.redirect("/");
+    }).catch((err) => {
+        console.log(err);
+    })
+
+
+}
+
+
+let getUserAccount = async (req, res) => {
+
+    try {
+        const email = req.body.email;
+        const password = req.body.password;
+
+        const userData = await signUp.findOne({ email });
+
+        if (userData) {
+            const isTrue = await bcrypt.compare(password, userData.password)
+            
+            if (isTrue) {
+                res.redirect("/");
+            }
+            else {
+                res.send("invalid login detials")
+
+            }
+        }
+        else {
+            res.send("invalid login detials")
+        }
+    }
+    catch (err) {
+        res.status(400).send("Invalid login")
+    }
+
+}
+
+
+module.exports = {
+    homePage,
     signinPage,
+    createAccount,
+    getUserAccount,
     AllChallengesPage,
     ChallengeDayPage,
     challengePage,
@@ -109,4 +165,5 @@ module.exports = { homePage,
     profilePage,
     RewardCoinPage,
     settingPage,
-    addChallenges }
+    addChallenges
+}

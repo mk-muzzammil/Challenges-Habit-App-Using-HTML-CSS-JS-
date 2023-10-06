@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In & Sign Up</title>
+    <title>Habbit Challenges|App</title>
+
     <link rel="stylesheet" href="./CSS Files/login_signup.css">
 
 </head>
@@ -17,25 +18,29 @@
 
         <div class="singin-container">
             <div class="sign-from-container">
-                <h2>Sign in to your account</h2>
-                <form action="#">
-                    <label for="username">Username</label>
-                        <input type="text" id="username" placeholder="Enter your username">
-                    
+                <h2 class="prmiary-heading">Sign in to your account</h2>
+                <form action="/login" class="form" method="post">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Enter your username" name="email">
+
 
                     <label for="password">Password</label>
-                        <input type="password" id="password" placeholder="Enter your password">
-                    
+                    <input type="password" id="password" placeholder="Enter your password" name="password">
 
-                    <button id="signin">Sign in</button>
+
+                    <button id="signin" type="submit">Sign in</button>
+
                 </form>
+
+
             </div>
 
             <div class="for-new-user">
                 <p>Don't have an account</p>
                 <p>Start your journey with us</p>
-               
+
                 <button id="signup">Sign Up</button>
+                <a href="/"> <button class="slider-pane" id="siginButton">Back to Home</button></a>
 
             </div>
 
@@ -43,25 +48,31 @@
 
         <div class="line"></div>
 
-        <!-- for sign up --> 
-         
+        <!-- for sign up -->
+
         <div class="signup-container">
             <div class="signup-from-container">
-                <h2>Create your account</h2>
-                <form action="#">
+                <h2 class="prmiary-heading">Create your account</h2>
+                <form action="/signup" method="post" class="form signup-from" >
 
                     <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Enter your name">
-                
-                    <label for="username">Username</label>
-                        <input type="text" id="username" placeholder="Enter your username">
-                    
+                    <input type="text" id="name" placeholder="Enter your name" name="username">
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Enter your email" name="email">
 
                     <label for="password">Password</label>
-                        <input type="password" id="password" placeholder="Enter your password">
-                    
+                    <input type="password" id="password" placeholder="Enter your password" name="password">
 
-                    <button id="signup">Sign Up</button>
+                    <label for="gender">Select Gender</label>
+                    <div class="gender-container">
+
+                        Male:<input type="radio" class="gender" name="gender" value="Male" checked>
+                        Female<input type="radio" class="gender" name="gender" value="Female">
+                    </div>
+
+                    <button id="signup" type="submit">Sign Up</button>
+
                 </form>
             </div>
 
@@ -69,6 +80,7 @@
                 <p>Already a member?</p>
                 <p>Resume your journey with us and explore what have not yet</p>
                 <button id="signin">Sign in</button>
+                <a href="/"> <button class="slider-pane" id="siginButton">Back to Home</button></a>
 
             </div>
 

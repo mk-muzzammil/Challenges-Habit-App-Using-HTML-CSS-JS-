@@ -2,6 +2,8 @@ const express = require("express");
 
 const { homePage,
     signinPage,
+    createAccount,
+    getUserAccount,
     AllChallengesPage,
     ChallengeDayPage,
     challengePage,
@@ -23,6 +25,8 @@ route.route("/").get(homePage);
 
 
 route.route("/login%signup").get(signinPage)
+route.route("/login").post(getUserAccount)
+route.route("/signup").post(createAccount)
 route.route("/AllChallengesPage").get(AllChallengesPage)
 
 
@@ -32,17 +36,17 @@ route.route("/challengePage").get(challengePage)
 
 route.route("/customizeChallengesPage").get(customizeChallengesPage).post(addChallenges)
 
-route.route("/HideChallengesPage").get(HideChallengesPage)
+route.route("/HideChallengesPage").get(HideChallengesPage);
 
-route.route("/languageSetting").get(languageSetting)
-
-
-route.route("/profilePage").get(profilePage)
+route.route("/languageSetting").get(languageSetting);
 
 
-route.route("/RewardCoinPage").get(RewardCoinPage)
+route.route("/profilePage").get(profilePage);
 
-route.route("/settingPage").get(settingPage)
+
+route.route("/RewardCoinPage").get(RewardCoinPage);
+
+route.route("/settingPage").get(settingPage);
 
 
 route.get("*", (req, res) => {

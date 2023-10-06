@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fraunces:wght@100&family=Montserrat&family=Outfit:wght@100&family=Poppins:wght@500;700&family=Prompt:wght@100&family=Space+Grotesk&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +17,14 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #212121;
- 
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Prompt', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+
 
 }
 
@@ -28,7 +37,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
     box-shadow: 0px 1px 16px 1px white;
     border-radius: 20px;
     overflow: hidden;
@@ -45,30 +54,36 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    transition: transform 1s ease-in ;
+    transition: transform 1s ease-out;
 
 }
 
 .sign-from-container {
     height: 450px;
-
+    width: 270px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 
-form {
+.form {
+    font-size: 1rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
+.signup-from {
+    gap: .5rem
+}
+
 input {
+    color: white;
+    font-size: 1rem;
     padding: .5rem;
-    /* border-radius: 10px; */
     background-color: transparent;
     border: none;
     border-bottom: 1px solid grey;
@@ -76,12 +91,23 @@ input {
 }
 
 #signin {
+    font-size: 1rem;
+    font-weight: 700;
     padding: .5rem;
     border-radius: 10px;
     cursor: pointer;
+    width: 90%;
+    border: 1px solid white;
+
 }
 
-.for-new-user{
+.signin-inactive {
+    background-color: transparent;
+    color: white;
+    
+}
+
+.for-new-user {
     width: 292px;
     height: 450px;
     line-height: 20px;
@@ -93,12 +119,13 @@ input {
     justify-content: center;
     align-items: flex-start;
     gap: 1rem;
-    /* background-color: #21e213; */
-    
+
 
 }
 
-#signup{
+#signup,.slider-pane {
+    font-size: 1rem;
+    font-weight: 700;
     color: white;
     padding: .5rem;
     border-radius: 10px;
@@ -108,25 +135,39 @@ input {
     width: 50%;
 }
 
-.line{
+.slider-pane{
+    width: 102%;
+}
+
+.signup-active {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+}
+
+.prmiary-heading {
+    font-size: 1.3rem;
+
+}
+
+.line {
     position: absolute;
     top: 0;
-    left: 46%;
+    left: 50%;
     background-color: white;
     width: 2px;
     height: 450px;
-    transition: all .5s ease-in-out;
-    /* transform: skewX(7deg);
-    transform: translateY(-100%); */
+    transition: transform .5s ease-out;
+    transform: skewX(7deg);
 }
 
-.signup-container{
+.signup-container {
     height: 450px;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem; 
+    gap: 1rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -135,19 +176,29 @@ input {
 
 }
 
+.signup-from-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 
-.for-old-user{
+.gender-container{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+
+.for-old-user {
     width: 292px;
     height: 450px;
     line-height: 20px;
     letter-spacing: 2px;
     word-spacing: 3px;
-    padding: 1rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 1rem;
-    /* background-color: #21e213; */
 
 }
